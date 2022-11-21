@@ -3,18 +3,99 @@
 :root {
   --Soft_blue: hsl(215, 51%, 70%);
   --Cyan: hsl(178, 100%, 50%);
-  --Very_dark_blue: hsl(217, 54%, 11%); /* main BG */
-  --Very_dark_blue: hsl(216, 50%, 16%); /* Card BG */
+  --Very_dark_blue-BG: hsl(217, 54%, 11%); /* main BG */
+  --Very_dark_blue-CARD: hsl(216, 50%, 16%); /* Card BG */
   --Very_dark_blue: hsl(215, 32%, 27%); /* line */
   --White: hsl(0, 0%, 100%);
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
+  background: var(--Very_dark_blue-BG);
+}
+
+.card__container {
+  margin: 0 auto;
+  width: 70%;
+  background: var(--Very_dark_blue-CARD);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__title {
+  color: var(--White);
+}
+
+.card__description {
+  color: var(--Soft_blue);
+}
+
+.card__price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__price-ETH-container {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  width: 50%;
+}
+
+.ETH__logo {
+  width: 0.8rem;
+  height: 1.2rem;
+  margin-right: 0.2rem;
+}
+
+.card__price-ETH {
+  color: var(--Cyan);
+  text-align: center;
+}
+
+.card__time-remaining-container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.clock__logo {
+  margin-right: 0.2rem;
+}
+
+.card__time-remaining {
+  color: var(--Soft_blue);
+}
+
+.line {
+  width: 100%;
+  border: solid var(--Very_dark_blue) 1px;
+}
+
+.creator__container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.creator__avatar {
+  height: 2rem;
+  border-radius: 50%;
+  border: solid var(--White) 1px;
+  margin-right: 0.5rem;
+
 }
 
 .attribution {
+  margin-top: 1rem;
   font-size: 11px;
   text-align: center;
+  color: var(--White);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Cyan);
 }
