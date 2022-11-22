@@ -91,6 +91,15 @@
 
 }
 
+.card__creator {
+  color: var(--Soft_blue);
+}
+
+.card__creator-name {
+  margin-left: 0.2rem;
+  color: var(--White);
+}
+
 .attribution {
   margin-top: 1rem;
   font-size: 11px;
